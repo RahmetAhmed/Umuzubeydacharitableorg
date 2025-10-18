@@ -1,5 +1,1 @@
-{
-  "version": 2,
-  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
-}
+{   "version": 2,   "rewrites": [     {        "source": "/assets/(.*)",        "destination": "/html/digitalize/assets/$1"     },     {        "source": "/about",        "destination": "/html/digitalize/index.html"     },     {        "source": "/contact",        "destination": "/html/digitalize/index.html"     },     {        "source": "/(.*)",        "destination": "/html/digitalize/index.html"     }   ],   "cleanUrls": true,   "trailingSlash": false } 
